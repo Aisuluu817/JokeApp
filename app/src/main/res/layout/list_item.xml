@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/regular"
+    android:layout_marginBottom="@dimen/regular"
+    app:cardCornerRadius="@dimen/small"
+    android:elevation="1dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/medium"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semibold"
+            android:background="@drawable/ic_type_general"
+            android:textColor="@color/white"
+            android:textAlignment="gravity"
+            android:layout_gravity="end"
+            android:textSize="14sp"
+            tools:text="general" />
+
+        <TextView
+            android:id="@+id/setup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:padding="@dimen/regular"
+            android:textColor="@color/black"
+            tools:text="A weasel walks into a bar. The bartender says" />
+        <TextView
+            android:id="@+id/punchline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/regular"
+            android:textColor="@color/black"
+            android:text="Pop,goes the weasel."
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
